@@ -1,98 +1,113 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>port folio</title>
-    <link rel="stylesheet" href="style .css">
+    <title>pont blanc</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            margin: 10px;
+            justify-content: center;
+        }
+        
+        .contenue-img {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+        }
+        
+        .contenue-img img {
+            width: 100%;
+            display: block;
+        }
+        
+        .texte {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: aliceblue;
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .sous-menu {
+            display: flex;
+            display: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .menu .sous-menu1 {
+            display: none;
+        }
+        
+        .menu:hover .sous-menu1 {
+            display: block;
+        }
+        
+        .menu:hover .sous-menu {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <nav>
-        <div class="profil">
-            <img src="image/profilo folio.jpg" alt="profil-photo">
-            <h1>win black</h1>
-        </div>
-        <ul>
-            <li>facebook</li>
-            <li>
-                <a href="../pont blanc/index.html">mes projets</a></li>
-            <li>
-                <a href="../creation de cv/index1.html">mon cv</a></li>
-            <li>mon blog</li>
-        </ul>
-    </nav>
-    <section class="page-content">
-        <header>
-            <h1>Salut je suis un developpeur jr</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab, ipsam, beatae nisi consequatur optio accusantium mollitia quis maxime, facere quasi ut molestiae eveniet asperiores assumenda eum eligendi amet atque!</p>
-            <button>dites hey</button>
-        </header>
-        <section class="presentation-image">
-            <img src="image/presentation image.jpeg" alt="presentation-image">
-        </section>
-        <section class="projet-section">
-            <h1>projet réaliser</h1>
-            <div class="projets">
-                <div class="projet">
-                    <h4>Réalition d'une voiture telecommandé</h4>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, corrupti! Officiis voluptatum eos at adipisci? Commodi sint dolores delectus pariatur fuga, a sapiente natus tempora perferendis voluptas facere dolore nisi?</p>
-                    <p class="date">2020-2021</p>
-                </div>
-
-                <div class="projet">
-                    <h4>Démarrage des moteur synchrone et asynchrone</h4>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate, dolorem iste accusantium unde totam incidunt amet dignissimos ducimus quam nam quod dolor, ratione aperiam tempora molestiae, architecto ipsa? Inventore.</p>
-                    <p class="date">2021-2022</p>
-                </div>
-
-                <div class="projet">
-                    <h4>mise à jours des systèmes d'exploitations</h4>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque sint laborum maiores. Maxime incidunt, velit libero dignissimos alias ipsa animi laudantium id! Facere fugiat quibusdam adipisci iste fuga veniam.</p>
-                    <p class="date">2022-2023</p>
-                </div>
-
-                <div class="projet">
-                    <h4>introduction a PHYTON</h4>
-                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta odit soluta est eaque hic vero inventore nemo voluptates deserunt. Enim impedit praesentium vero quae, eaque illum debitis veritatis. Aliquam, unde?</p>
-                    <p class="date">2022-2023</p>
-                </div>
-
-                <div class="projet">
-                    <h4>voyage</h4>
-                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores incidunt eligendi repellendus tempora aspernatur et soluta quia, eveniet assumenda autem mollitia ipsum, voluptates exercitationem repudiandae totam repellat veniam
-                        dolorem qui!</p>
-                    <p class="date">2024-2025</p>
-                </div>
-            </div>
-        </section>
-    </section>
-    <footer>
-        <div class="colonne">
-            <h3>Mes services</h3>
-            <p>installation des systèmes d'exploitations</p>
-            <p>installation 'n electricité batiment</p>
-            <p>réalisation des compteur synchrone et asynchrone </p>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">menu</a>
+                    <ul class="sous-menu">
+                        <li><a href="#">Acceuil</a>
+                            <ul class="sous-menu1">
+                                <li><a href="#">fabrication</a></li>
+                                <li><a href="#">emballage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">A propos</a>
+                            <ul class="sous-menu1">
+                                <li><a href="#">constucteurs nom des</a> </li>
+                                <li><a href="">contacts</a> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Contats</a>
+                            <ul class="sous-menu1">
+                                <li><a href="#">whatsapp</a></li>
+                                <li><a href="#">telephone</a></li>
+                            </ul>
+                        </li>
+                </li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
 
 
-        </div>
-        <div class="colonne">
 
-            <h3>Mon entreprise</h3>
-            <p>Equipe constitueée de 10 PROGS</p>
-            <p>communauté mondiale</p>
-            <p>entreprise à but lutratif</p>
 
-        </div>
-        <div class="colonne">
-            <h3>Mes adresses</h3>
-            <p>tatchumg.r@gmal.com</p>
-            <p>winblack41@gmail.com</p>
-            <p></p>
 
-        </div>
-    </footer>
+
+
+
+
+
+
+
+
+    <div class="contenue-img">
+        <img src="/pont blanc/image/Le Pont du Gard_.jpg" alt="pont-blanc">
+        <div class="texte">PONT BLANC</div>
+    </div>
 
 
 </body>
